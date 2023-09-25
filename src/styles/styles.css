@@ -1,0 +1,146 @@
+body {
+    background-color: #EAE7DC
+}
+
+.header {
+    background-color: #f87d49;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.Trip-cards {
+    display: grid;
+    margin: 40px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.trip-card {
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    background-color: beige;
+}
+
+.card-img {
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+.trip {
+    width: 40%;
+    margin: 50px auto;
+    background-color: #D8C3A5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.trip h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.trip-detail {
+    margin-left: 80px;
+}
+
+.trip-detail div {
+    margin: 20px;
+}
+
+.trip-detail label {
+    width: 100px;
+}
+
+.trip-detail input {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.trip-detail textarea {
+    width: 400px;
+    border-radius: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: #fe5246;
+    color: white;
+    margin: 10px 39%;
+    border-radius: 10px;
+}
+
+.talabel {
+    margin-bottom: 10px;
+}
+
+.card-btn {
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.card-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.trip-info h1 {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.carousel-inner {
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 300px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+    text-decoration: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    margin: 10px;
+}
+
+.trip-details {
+    width: 70%;
+    margin: 15px auto;
+    background-color: #e2652f;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.participant-details {
+    width: 20%;
+    margin: 25px auto;
+}
+
+.participant-details li {
+    list-style-type: none;
+}
