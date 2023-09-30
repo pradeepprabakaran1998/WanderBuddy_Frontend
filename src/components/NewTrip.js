@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import React from 'react'
 
 const NewTrip = () => {
@@ -30,7 +30,9 @@ const NewTrip = () => {
       headers: {
         'Content-Type': 'application/json'
       }
-    }).then((response) => console.log(response.data))
+    }).then((response) => {
+      console.log(response.data)
+    })
       .catch((error) => console.log(error))
   }
 

@@ -1,12 +1,27 @@
 import { useSelector } from "react-redux"
-
+import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const TripDetail = (props) => {
     const trip = useSelector(state => state.trip)
     var img1 = trip.tripimages[0]
     var img2 = trip.tripimages[1]
     var img3 = trip.tripimages[2]
-    console.log(trip)
+    var button
+    const [chatroomID, setChatroomID] = useState()
+    //const chatRoomURL = `http://127.0.0.1:8000/createchatroom/7/`
+    const chatRoomURL = `http://127.0.0.1:8000/createchatroom/${trip.id}/`
+
+    useEffect(() => {
+        axios.get(chatRoomURL).then((response) => {
+            setChatroomID(response.data.chatroomID)
+            localStorage.setItem('chatroomID', response.data.chatroomID)
+            console.log('id set')
+        })
+    }, [])
+
+
     return (
         <div className="trip-info">
             <h1>{trip.title}</h1>
@@ -53,9 +68,7 @@ const TripDetail = (props) => {
                     <li key={index}>{participant.first_name} {participant.last_name}</li>
                 )}
             </section>
-
-
-
+            <button className="start-chat-btn"><Link to="/chatapp">Start Chat</Link></button>
         </div>
     )
 }

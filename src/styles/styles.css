@@ -94,11 +94,6 @@ button {
     margin: 0 10px;
 }
 
-.card-btn a {
-    text-decoration: none;
-    color: white;
-}
-
 .trip-info h1 {
     text-align: center;
     margin: 15px 0px 15px 0px;
@@ -143,4 +138,35 @@ button {
 
 .participant-details li {
     list-style-type: none;
+}
+
+
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.chat-messages {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-chat-btn,
+.start-chat-btn {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: white
 }

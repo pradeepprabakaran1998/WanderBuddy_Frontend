@@ -7,7 +7,6 @@ export default function Trips(props) {
     const [trips, setTrips] = useState([])
 
     useEffect(() => {
-        console.log("component")
         axios.get(baseURL).then((response) => {
             console.log(response.data)
             setTrips(response.data)
